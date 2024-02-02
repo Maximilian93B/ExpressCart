@@ -31,7 +31,7 @@ try {
 } catch (err) {
   res.status(500).json(err)
 }
-// be sure to include its associated Products
+
 });
 
 router.post('/', async (req, res) => {
