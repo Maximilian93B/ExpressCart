@@ -13,9 +13,10 @@ router.get('/', async (req, res) => {
     });
     res.status(200).json(productData);
   } catch (err) {
+    console.error(err); // This will help in debugging
     res.status(500).json(err);
   }
-});
+  
 
 // get one product
 router.get('/:id', async (req, res) => {
