@@ -1,12 +1,17 @@
 
 # ExpressCart
 
-## Live Demo[Live Demo Link](./Assets/13-orm-homework-demo-01.gif)
+## Demo GIFs
 
+### Demo 1
+![Demo GIF 1](./Assets/13-orm-homework-demo-01.gif)
 
-## [Live Demo Link](./Assets/13-orm-homework-demo-02.gif)
+### Demo 2
+![Demo GIF 2](./Assets/13-orm-homework-demo-02.gif)
 
-##[Live Demo Link](./Assets/13-orm-homework-demo-03.gif)
+### Demo 3
+![Demo GIF 3](./Assets/13-orm-homework-demo-03.gif)
+
 
 
 ## Table of Contents
