@@ -1,8 +1,13 @@
 
 # ExpressCart
 
-## Live Demo
-[Live Demo Link]()
+## Live Demo[Live Demo Link](./Assets/13-orm-homework-demo-01.gif)
+
+
+## [Live Demo Link](./Assets/13-orm-homework-demo-02.gif)
+
+##[Live Demo Link](./Assets/13-orm-homework-demo-03.gif)
+
 
 ## Table of Contents
 - [Live Demo](#live-demo)
@@ -18,14 +23,7 @@
 ## Description
 This project focuses on creating a robust back end for an e-commerce platform, designed to offer a suite of features essential for online retail stores. Utilizing Express.js for the server framework and Sequelize as the ORM to streamline the  MySQL interactions, this back end supports a range of e-commerce activities for product cataloging. By employing Node.js, Express, and Sequelize, ExpressCart ensures efficient handling of data and provides a scalable API for front-end applications to interact with.
 
-## Built With
-Mention the frameworks, libraries, and tools used.
 
-## Features
-What makes your project stand out?
-
-## Getting Started
-Instructions on setting up the project locally.
 ## Installation
 
 Follow these steps to set up and run ExpressCart locally:
