@@ -15,7 +15,6 @@
 
 
 ## Table of Contents
-- [Live Demo](#live-demo)
 - [Description](#description)
 - [Built With](#built-with)
 - [Features](#features)

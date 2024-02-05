@@ -42,6 +42,7 @@ router.post('/', async (req, res) => {
   try {
     // create a new tag 
     const tagData = await Tag.create({
+      // requirements for new tag 
       tag_name: req.body.tag_name,
     });
     res.status(200).json(tagData);
@@ -60,31 +61,38 @@ router.put('/:id', async (req, res) => {
         id: req.params.id,
       },
     });
-    if (tagData[0] > 0) { // Check if any rows were updated
+    // Check if any rows were updated
+    if (tagData[0] > 0) { 
       const updatedTagData = await Tag.findByPk(req.params.id);
       res.status(200).json(updatedTagData);
     } else {
+      //If false then return error 
       res.status(404).json({ message: 'No tag found with this id!' });
     }
   } catch (err) {
-    res.status(500).json(err); // Correct method call for setting the status and responding with JSON
+    //catch server error 
+    res.status(500).json(err); 
   }
 });
 
+//Route to delte Tag
 
 router.delete('/:id', async (req, res) => {
 
   try {
-      // delete on tag by its `id` value
+      // delete Tag by ID 
     const tagData = await Tag.destroy({
       where: {
         id: req.params.id,
       }
     });
+    // If id does not match 
     if(!tagData) {
+      // Return error 
       res.status(404).json({ message: ' No tag found with this id '});
       return;
     } 
+    // If successful then return 200 
     res.status(200).json({ message: 'Tag deleted!'});
   } catch (err) {
     res.status(500).json(err);
